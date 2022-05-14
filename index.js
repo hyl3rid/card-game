@@ -31,14 +31,14 @@ for (let i = 0; i < 7; i++) {
   [dealedCard, deck] = dealCard(hand, deck, suits);
 }
 
-// console.log(viewHand(hand));
+console.log("Welcome! Here is your hand. \n", viewHand(hand));
 
 // #########################################
 // Dealing cards
 // addCard is called when dealCard is executed.
-[dealedCard, deck] = dealCard(hand, deck, suits);
-console.log(dealedCard);
-console.log(viewHand(hand));
+// [dealedCard, deck] = dealCard(hand, deck, suits);
+// console.log(dealedCard);
+// console.log(viewHand(hand));
 
 // #########################################
 // Check cards left... not sure if im using the index as main source of data
