@@ -80,7 +80,7 @@ for (let i = 0; i < 7; i++) {
 
 // #########################################
 // Getting index of the Suit card from array in hand with specified index
-// ["Clubs", "Diamonds", "Hearts", "Spades", "Joker"]
+// See suits avaiable ["Clubs", "Diamonds", "Hearts", "Spades", "Joker"]
 // console.log("Index of Suit: ", getSuit(hand, 0, suits));
 // console.log(viewHand(hand));
 
