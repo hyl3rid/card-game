@@ -14,7 +14,6 @@ let deck = 52;
 // let deck = 54;
 let suits = ["Clubs", "Diamonds", "Hearts", "Spades", "Joker"];
 let hand = [];
-let addedCard;
 let dealedCard;
 let message;
 
@@ -65,7 +64,7 @@ for (let i = 0; i < 7; i++) {
 // sortBySuit(hand, false);
 // console.log(viewHand(hand));
 
-// Sort by suit - ASC
+// // Sort by suit - ASC
 // sortBySuit(hand);
 // console.log(viewHand(hand));
 
