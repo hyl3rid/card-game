@@ -1,5 +1,5 @@
 import { dealCard, shuffleCards, remainingCards } from "./deck.js";
-import { addCard, removeCard, sortBySuit, sortByValue } from "./hand.js";
+import { removeCard, sortBySuit, sortByValue } from "./hand.js";
 import {
   getSuit,
   getValue,
@@ -35,9 +35,10 @@ for (let i = 0; i < 7; i++) {
 
 // #########################################
 // Dealing cards
-// [dealedCard, deck] = dealCard(hand, deck, suits);
-// console.log(dealedCard);
-// console.log(viewHand(hand));
+// addCard is called when dealCard is executed.
+[dealedCard, deck] = dealCard(hand, deck, suits);
+console.log(dealedCard);
+console.log(viewHand(hand));
 
 // #########################################
 // Check cards left... not sure if im using the index as main source of data

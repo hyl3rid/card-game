@@ -13,6 +13,7 @@ function generateCard(hand, deck, suits) {
   let generatingSuit = suits[randomNumber];
   let generatingValue = Math.floor(Math.random() * 13) + 1;
 
+  // Check if there are repeated cards or if Jokers are present in hand
   for (let card of hand) {
     if (card[0] === generatingSuit && card[1] === generatingValue) {
       return generateCard(hand, deck, suits);
@@ -23,6 +24,7 @@ function generateCard(hand, deck, suits) {
     }
   }
 
+  // Avoiding adding duplicate Jokers
   if (!jokerBlackAndWhite) {
     if (generatingSuit === "Joker" && generatingValue === 7) {
       hand.push([generatingSuit, "black&white"]);
@@ -37,6 +39,7 @@ function generateCard(hand, deck, suits) {
     }
   }
 
+  // Stopping more Jokers joining the hand
   if (generatingSuit === "Joker") {
     return generateCard(hand, deck, suits);
   }
